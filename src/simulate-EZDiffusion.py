@@ -33,7 +33,7 @@ def simulate_ez_diffusion():
             results.append([N, a, v, t, T_obs, M_obs, V_obs])
 
     df = pd.DataFrame(results, columns=["N", "a", "v", "t", "T_obs", "M_obs", "V_obs"])
-    os.makedirs("results", exist_ok=True) 
+    os.makedirs("results", exist_ok=True) #Suggestion from Chatgpt for debugging
 
     df.to_csv("results/output.csv", index=False) #Chatgpt wrote a path to create output.csv to store data
 
